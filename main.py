@@ -1,12 +1,17 @@
 print("Welcome to fAssistant")
-print("I can just print the time and the date for now...")
-print('Type "time" to print the time or "date" to print the date:')
+print("I can help you with something stupid...")
+print('Type what you want or "help" for the commands list:')
 
 request=input()
+
 import time
 
-if input=="date":
+if request == "help":
+    import help_menu
+
+if request == "time":
     print(time.strftime("%H.%M.%S"))
-else:
+
+if request == "date":
     print(time.strftime("%d.%m.%Y"))
 
