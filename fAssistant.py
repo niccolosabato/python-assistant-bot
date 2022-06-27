@@ -1,17 +1,21 @@
 print("Welcome to fAssistant")
 print("I can help you with something stupid...")
-print('Type what you want or "help" for the commands list:')
 
-request=input()
+while True:
+    print('Type what you want or "help" for the commands list:')
+    request=input()
 
-import time
+    import time
 
-if request == "help":
-    import help_menu
+    if request == "help":
+        print("Commands list:\n1. help \n2. exit\n3. time \n4. date")
 
-if request == "time":
-    print(time.strftime("%H.%M.%S"))
+    if request == "exit":
+        exit()
 
-if request == "date":
-    print(time.strftime("%d.%m.%Y"))
+    if request == "time":
+        print(time.strftime("%H.%M.%S"))
+
+    if request == "date":
+        print(time.strftime("%d.%m.%Y"))
 
