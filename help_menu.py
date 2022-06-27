@@ -1,1 +1,0 @@
-print("Commands list:\n1. help \n2. time \n3. date")
