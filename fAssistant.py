@@ -18,3 +18,6 @@ while True:
 
     if request == "date":
         print(time.strftime("%d.%m.%Y"))
+
+    if request == "frocio":
+        print("sei un frocio niccolo")        
